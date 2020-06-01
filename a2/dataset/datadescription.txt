@@ -1,0 +1,39 @@
+------------------------
+Data Set Information: 
+------------------------
+
+The data is related with direct marketing campaign of a banking institution based on phone calls. Often more than one contact to the same client was required, in order to access if the product (bank term deposit) would be subscribed or not.
+
+
+The classification goal is to predict if the client will subscribe to a term deposit after they have been contacted by phone.
+
+------------------------
+Attribute Information:
+------------------------
+
+Input variables:
+1 - id
+2 - age (numeric)
+3 - job : type of job (categorical with 12 levels: 'JobCat1' to 'JobCat11', and 'unknown')
+4 - marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
+5 - education (categorical: "unknown","secondary","primary","tertiary")
+6 - default: has credit in default? (binary: "yes","no")
+7 - balance: average yearly balance, in euros (numeric) 
+8 - housing: has housing loan? (binary: "yes","no")
+9 - loan: has personal loan? (binary: "yes","no")
+
+# related with the last contact of the current campaign:
+10 - contact: contact communication type (categorical: "unknown","telephone","cellular") 
+11 - day: last contact day of the month (numeric)
+12 - month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
+
+# other attributes:
+13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted)
+15 - previous: number of contacts performed before this campaign and for this client (numeric)
+16 - poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+
+
+Output variable (desired target):
+17 -has the client subscribed a term deposit? (binary: "no","yes")
+
